@@ -1,0 +1,23 @@
+#header {
+    margin-left: 50px;
+}
+
+#container {
+    border: solid, blue;
+    padding: 20px;
+    width: fit-content;
+}
+
+.arrow {
+    border: solid, purple;
+    /* margin-left: 20px;
+    margin-right: 0px; */
+}
+
+#figur {
+    border: solid, black;
+    border-width: 1px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}

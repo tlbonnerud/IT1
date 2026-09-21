@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#container {
+    width: 80vw;
+    aspect-ratio: 3/2;
+    background-color: azure;
+    box-shadow: 5px 5px 5px 5px black;
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+
+.box {
+    background-color: red;
+    width: calc((100%)/4 - 10px);
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    transition-duration: 0.4s;
+
+}
+
+.box:hover {
+    transform: scale(200%);
+}
