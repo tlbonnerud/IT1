@@ -1,5 +1,7 @@
 const container = document.getElementById("container")
 const startButton = document.getElementById("startBtn")
+const scoreText = document.getElementById("scoreText")
+// let TOTscore = 0 
 
 startButton.innerText = "Start game!"
 let element = document.createElement("div")
@@ -24,10 +26,7 @@ const startGame = (cards) => {
         child.style.backgroundColor = "#000000"
         console.log(child.value)
     }
-    // cards.forEach((value) => {
-    //     value.currentCollor = "#000000"
-    //     console.log(value)
-    // })
+
 }
 
 for (let i = 1; i < 9; i++) {
@@ -75,6 +74,8 @@ const checkPair = () => {
         if (pair[0].value.value == pair[1].value.value & pair[0].value.num != pair[1].value.num) {
             pair[0].value.scored = true
             pair[1].value.scored = true
+            // TOTscore += 100
+            // scoreText.innerText = `Din score: {TOTscore}`
         } else {
             pair[0].value.flipped = false
             pair[1].value.flipped = false
